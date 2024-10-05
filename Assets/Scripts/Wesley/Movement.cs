@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     //animation
     public Animator animator { get; private set; }
 
+    //pausing for win barrier and animation
     public bool paused = false;
 
     void Start()
@@ -29,7 +30,15 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        horizontalMove = InputManager.instance.moveInput.x;
+        if(!paused)
+        {
+            horizontalMove = InputManager.instance.moveInput.x;
+        }
+        else
+        {
+            horizontalMove = 0;
+        }
+
         if(horizontalMove != prevHorizontalMove)
         {
             animator.SetTrigger("Move");
