@@ -14,9 +14,13 @@ public class Movement : MonoBehaviour
     private bool isGrounded = false;
     public float jumpForce; //can be changed in unity editor
 
+    //animation
+    private Animator animator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -26,6 +30,20 @@ public class Movement : MonoBehaviour
         if(InputManager.instance.jumpInput && isGrounded)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            isGrounded = false;
+        }
+
+        animator.SetFloat("xVelocity", transform.position.x);
+        animator.SetFloat("yVelocity", transform.position.y);
+        animator.SetBool("isJumping", !isGrounded);
+
+        if(horizontalMove < .1f && horizontalMove > -.1f)
+        {
+            animator.SetBool("NotMoving", true);
+        }
+        else
+        {
+            animator.SetBool("NotMoving", false);
         }
     }
 
@@ -34,19 +52,11 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector2(horizontalMove * speed, rb.velocity.y);
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
+    private void OnCollisionStay2D(Collision2D other) 
     {
         if(other.gameObject.CompareTag("Jumpable"))
         {
             isGrounded = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D other) 
-    {
-        if(other.gameObject.CompareTag("Jumpable"))
-        {
-            isGrounded = false;
         }
     }
 }
