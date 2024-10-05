@@ -27,15 +27,18 @@ public class Movement : MonoBehaviour
     {
         horizontalMove = InputManager.instance.moveInput.x;
 
+        //jumps
         if(InputManager.instance.jumpInput && isGrounded)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
+            animator.SetBool("isJumping", true);
+            animator.SetTrigger("Jump");
         }
 
-        animator.SetFloat("xVelocity", transform.position.x);
+        //animations
+        animator.SetFloat("xVelocity", horizontalMove);
         animator.SetFloat("yVelocity", transform.position.y);
-        animator.SetBool("isJumping", !isGrounded);
 
         if(horizontalMove < .1f && horizontalMove > -.1f)
         {
@@ -57,6 +60,22 @@ public class Movement : MonoBehaviour
         if(other.gameObject.CompareTag("Jumpable"))
         {
             isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other) 
+    {
+        if(other.gameObject.CompareTag("Jumpable"))
+        {
+            isGrounded = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+        if(other.gameObject.CompareTag("Jumpable"))
+        {
+            animator.SetBool("isJumping", false);
         }
     }
 }
