@@ -11,7 +11,7 @@ public class footAnimation : MonoBehaviour
         StartCoroutine(GetAnimator());
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
+    private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.gameObject.CompareTag("Jumpable"))
         {
