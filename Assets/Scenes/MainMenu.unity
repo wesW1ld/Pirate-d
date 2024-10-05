@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 602649629}
   - component: {fileID: 602649628}
   m_Layer: 6
-  m_Name: Untitled 3
+  m_Name: Player Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -471,9 +471,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 599041075
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3e2c26c74c1ad5c4d89728f9cda7e280, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -493,13 +493,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602649627}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.08517991, w: 0.9963656}
-  m_LocalPosition: {x: 556, y: 121, z: 0}
-  m_LocalScale: {x: 144.79321, y: 144.79321, z: 144.79321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 308, y: -268, z: 0.87}
+  m_LocalScale: {x: 213.71693, y: 213.71693, z: 213.71692}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.773}
+  m_Father: {fileID: 1094749688}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &843876435
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.86
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -660,8 +660,8 @@ Canvas:
   m_GameObject: {fileID: 1094749684}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 843876437}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -671,7 +671,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1712849827
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1094749688
@@ -686,6 +686,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 602649629}
   - {fileID: 1964872015}
   - {fileID: 213369482}
   - {fileID: 1869100189}
@@ -1126,4 +1127,3 @@ SceneRoots:
   - {fileID: 843876438}
   - {fileID: 1094749688}
   - {fileID: 1674095484}
-  - {fileID: 602649629}
