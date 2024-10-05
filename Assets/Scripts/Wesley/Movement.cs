@@ -9,23 +9,29 @@ public class Movement : MonoBehaviour
     public float speed; //can be changed in unity editor
     private float horizontalMove;
     private Rigidbody2D rb;
+    private float prevHorizontalMove;
 
     //jumping
     private bool isGrounded = false;
     public float jumpForce; //can be changed in unity editor
 
     //animation
-    private Animator animator;
+    public Animator animator { get; private set; }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        prevHorizontalMove = 0;
     }
 
     void Update()
     {
         horizontalMove = InputManager.instance.moveInput.x;
+        if(horizontalMove != prevHorizontalMove)
+        {
+            animator.SetTrigger("Move");
+        }
 
         //jumps
         if(InputManager.instance.jumpInput && isGrounded)
@@ -48,6 +54,8 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("NotMoving", false);
         }
+
+        prevHorizontalMove = horizontalMove;
     }
 
     void FixedUpdate()
@@ -68,14 +76,6 @@ public class Movement : MonoBehaviour
         if(other.gameObject.CompareTag("Jumpable"))
         {
             isGrounded = false;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other) 
-    {
-        if(other.gameObject.CompareTag("Jumpable"))
-        {
-            animator.SetBool("isJumping", false);
         }
     }
 }
