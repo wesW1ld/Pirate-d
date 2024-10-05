@@ -67,6 +67,11 @@ public class Movement : MonoBehaviour
         }
 
         prevHorizontalMove = horizontalMove;
+
+        if(prevHorizontalMove != 0){
+            animator.SetFloat("PrevInput", prevHorizontalMove);
+        }
+
     }
 
     void FixedUpdate()
