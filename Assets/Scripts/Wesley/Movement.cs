@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
 
         //animations
         animator.SetFloat("xVelocity", horizontalMove);
-        animator.SetFloat("yVelocity", transform.position.y);
+        animator.SetFloat("yVelocity", rb.velocity.y);
 
         if(horizontalMove < .1f && horizontalMove > -.1f)
         {
