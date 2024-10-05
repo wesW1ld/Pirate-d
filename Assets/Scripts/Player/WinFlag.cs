@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinFlag : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("WinFlag")){
-            Debug.Log("YOU WON");
-
-            //SceneLoad ....
+            GetComponent<Movement>().paused = true;
+            StartCoroutine(Win());
         }
+    }
+
+    IEnumerator Win(){
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Win Screen");
     }
 }

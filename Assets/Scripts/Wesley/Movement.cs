@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
     //animation
     public Animator animator { get; private set; }
 
+    public bool paused = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -34,7 +36,7 @@ public class Movement : MonoBehaviour
         }
 
         //jumps
-        if(InputManager.instance.jumpInput && isGrounded)
+        if(InputManager.instance.jumpInput && isGrounded && !paused)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
@@ -60,7 +62,14 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalMove * speed, rb.velocity.y);
+        if(!paused)
+        {
+            rb.velocity = new Vector2(horizontalMove * speed, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
     }
 
     private void OnCollisionStay2D(Collision2D other) 

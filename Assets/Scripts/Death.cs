@@ -22,8 +22,10 @@ public class Death : MonoBehaviour
     }
     
     public void OnCollisionEnter2D(Collision2D other)
-    if (other.gameObject.CompareTag("Player"))
     {
-        SceneManager.LoadScene("Retryscript");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Retryscript");
+        }
     }
 }
