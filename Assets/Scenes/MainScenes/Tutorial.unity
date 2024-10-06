@@ -665,6 +665,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 865361218528512606, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 865361218528512606, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 1
       objectReference: {fileID: 0}
@@ -1394,13 +1398,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8305957671650677873, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2043127043}
   m_SourcePrefab: {fileID: 100100000, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
 --- !u!4 &2043127041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7536961458497097162, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
   m_PrefabInstance: {fileID: 2043127040}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2043127042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8305957671650677873, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
+  m_PrefabInstance: {fileID: 2043127040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2043127043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043127042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2754d8f13f8b4c4aa5fe111af319e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
