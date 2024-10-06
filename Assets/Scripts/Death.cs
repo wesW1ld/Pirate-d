@@ -8,7 +8,6 @@ public class Death : MonoBehaviour
     public float speed; //can be changed in unity editor
     private Rigidbody2D rb;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +20,12 @@ public class Death : MonoBehaviour
         rb.velocity = new Vector2(0, speed);
     }
     
-    public void OnCollisionEnter2D(Collision2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Retryscript");
+
+            SceneManager.LoadScene("Lose");
         }
     }
 }

@@ -43,9 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: MainMenu
-    uniqueID: 2582117469
-    locked: 0
   - name: Player
     uniqueID: 599041075
+    locked: 0
+  - name: MainMenu
+    uniqueID: 2582117469
     locked: 0

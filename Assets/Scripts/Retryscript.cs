@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Retryscript : MonoBehaviour
 {
+
     public void RetryGame()
     {
-        SceneManager.LoadScene("eric"); // name "eric" whatever level 1 is named
+        SceneManager.LoadScene(""); 
     }
     public void QuitGame()
     {
