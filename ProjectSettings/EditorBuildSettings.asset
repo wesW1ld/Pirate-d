@@ -6,15 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainScenes/MainMenu.unity
+    guid: 00845a73de616c44591b629dabd6c6db
   - enabled: 1
-    path: Assets/Scenes/Lose.unity
-    guid: df680fe7f26aa694cb28a340d2136390
+    path: Assets/Scenes/MainScenes/Tutorial.unity
+    guid: 47748e7d4b5b140edb452ced68dd9cfd
   - enabled: 1
-    path: Assets/Scenes/eric.unity
-    guid: 81a0510c55f7fba4c98657b505501684
-  - enabled: 1
-    path: Assets/Scenes/Win Screen.unity
+    path: Assets/Scenes/MainScenes/WinScreen1.unity
     guid: 97cce0c0d894eb845960399cca0070fd
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Level-1.unity
+    guid: ce443c80067e046f9bdd5fdf39bf5e7f
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Winscreen2.unity
+    guid: 9137b60874ea8e04eb4acb682f5ec76f
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Level-2.unity
+    guid: 33044c60657844147b2755601e277faa
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Winscreen3.unity
+    guid: 68c48e2677fbcb448a2c32df47b64161
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Lose.unity
+    guid: df680fe7f26aa694cb28a340d2136390
   m_configObjects: {}
