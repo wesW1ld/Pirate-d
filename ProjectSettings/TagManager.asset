@@ -49,14 +49,17 @@ TagManager:
   - name: Water
     uniqueID: 717673711
     locked: 0
+  - name: Player
+    uniqueID: 599041075
+    locked: 0
   - name: Walls
     uniqueID: 2411845471
     locked: 0
   - name: Fire
     uniqueID: 1345253683
     locked: 0
-  - name: Player
-    uniqueID: 599041075
+  - name: Map
+    uniqueID: 1381347903
     locked: 0
   - name: MainMenu
     uniqueID: 2582117469

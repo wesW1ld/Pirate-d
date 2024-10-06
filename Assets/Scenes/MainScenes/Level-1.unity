@@ -130,9 +130,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 566749584133322971, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 566749584133322971, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 566749584133322971, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1381347903
+      objectReference: {fileID: 0}
     - target: {fileID: 865361218528512606, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
       propertyPath: near clip plane
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778766518802498662, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778766518802498662, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1381347903
       objectReference: {fileID: 0}
     - target: {fileID: 4073470577811175057, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
       propertyPath: m_Name
@@ -1604,7 +1624,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1883121825
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6440,6 +6460,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4457767066903500321, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7536961458497097162, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
