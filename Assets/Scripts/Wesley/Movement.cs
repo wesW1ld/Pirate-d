@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
-        prevHorizontalMove = 0;
+        prevHorizontalMove = -1;
         fireDownSprite = fireDown.GetComponent<SpriteRenderer>();
     }
 
