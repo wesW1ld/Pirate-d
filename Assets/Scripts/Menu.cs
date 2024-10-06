@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Tutorial"); // name "eric" whatever level 1 is named
+        SceneManager.LoadScene("Tutorial-new"); // name "eric" whatever level 1 is named
     }
     public void QuitGame()
     {
