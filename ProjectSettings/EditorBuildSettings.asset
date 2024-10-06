@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScenes/Winscreen3.unity
     guid: 68c48e2677fbcb448a2c32df47b64161
   - enabled: 1
+    path: Assets/Scenes/MainScenes/Level-3.unity
+    guid: 96b115ba1e89141bd9f4dea129a406a9
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Winend.unity
+    guid: 35fdef5a341d9c14d9bd98c6070da1f0
+  - enabled: 1
     path: Assets/Scenes/MainScenes/Lose.unity
     guid: df680fe7f26aa694cb28a340d2136390
   m_configObjects: {}
