@@ -130,41 +130,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 566749584133322971, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 566749584133322971, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: m_SortingOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 566749584133322971, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1381347903
-      objectReference: {fileID: 0}
-    - target: {fileID: 865361218528512606, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: near clip plane
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778766518802498662, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778766518802498662, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1381347903
-      objectReference: {fileID: 0}
     - target: {fileID: 4073470577811175057, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
       propertyPath: m_Name
       value: Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665371233700073062, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: m_UpdateMethod
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665371233700073062, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
-      propertyPath: m_BlendUpdateMethod
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8240426569000847193, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6327,10 +6295,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.229983
-      objectReference: {fileID: 0}
-    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.57
       objectReference: {fileID: 0}
@@ -6460,10 +6424,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4457767066903500321, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7536961458497097162, guid: 9a65ee7b68100ac44964c23a49a4b0ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
