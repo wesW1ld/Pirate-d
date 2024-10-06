@@ -5,8 +5,10 @@ using UnityEngine;
 public class LilGuy : MonoBehaviour
 {
     //lil guy
-    private float startPos = -3.6f;
-    private float endPos = 3.5f;
+    private float startPos = -3.3f;
+    private float endPos = 2.9f;
+    // private float startPos = -3.6f;
+    // private float endPos = 3.2f;
     private float distance;
 
     //player
@@ -21,7 +23,7 @@ public class LilGuy : MonoBehaviour
     {
         distance = endPos - startPos;
         endy = GameObject.Find("WinFlag").transform.position.y;
-        parent = GetComponentInParent<Transform>();
+        parent = GameObject.Find("PlayerUpdated3").GetComponent<Transform>();
         playerStart = parent.position.y;
     }
 
@@ -44,7 +46,7 @@ public class LilGuy : MonoBehaviour
             newPos = startPos;
         }
 
-        transform.localPosition = new Vector3(transform.localPosition.x, newPos, -5);
+        transform.localPosition = new Vector3(transform.localPosition.x, newPos, transform.localPosition.z);
     }
 }
 
