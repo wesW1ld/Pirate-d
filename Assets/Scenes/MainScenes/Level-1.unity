@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 865361218528512606, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4073470577811175057, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -6069,6 +6073,67 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1001 &1659100444
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.229983
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 373.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868290681812131085, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315163716406738501, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
+      propertyPath: m_Name
+      value: WinFlag
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88d9300362faab34cbd80abf5b14deb4, type: 3}
 --- !u!20 &1716825372 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 865361218528512606, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
@@ -6216,3 +6281,4 @@ SceneRoots:
   - {fileID: 1894240759}
   - {fileID: 291254868}
   - {fileID: 1949313078}
+  - {fileID: 1659100444}
