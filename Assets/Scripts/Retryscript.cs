@@ -8,7 +8,7 @@ public class Retryscript : MonoBehaviour
 
     public void RetryGame()
     {
-        SceneManager.LoadScene("Tutorial-new"); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
     }
     public void QuitGame()
     {
