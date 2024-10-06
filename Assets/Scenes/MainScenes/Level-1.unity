@@ -138,6 +138,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 6665371233700073062, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: m_UpdateMethod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665371233700073062, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
+      propertyPath: m_BlendUpdateMethod
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8240426569000847193, guid: 43cf894ed494f7a42a078a577764f4de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
