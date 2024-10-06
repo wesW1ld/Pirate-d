@@ -46,6 +46,9 @@ TagManager:
   - name: MainMenu
     uniqueID: 2582117469
     locked: 0
+  - name: Water
+    uniqueID: 717673711
+    locked: 0
   - name: Walls
     uniqueID: 2411845471
     locked: 0
