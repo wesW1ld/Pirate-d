@@ -15,6 +15,6 @@ public class WinFlag : MonoBehaviour
 
     IEnumerator Win(){
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("Win Screen");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
