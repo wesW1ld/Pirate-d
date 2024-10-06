@@ -18,6 +18,9 @@ public class Movement : MonoBehaviour
     //animation
     public Animator animator { get; private set; }
 
+    [SerializeField] GameObject fireDown;
+    SpriteRenderer fireDownSprite;
+
     //pausing for win barrier and animation
     public bool paused = false;
 
@@ -26,6 +29,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         prevHorizontalMove = 0;
+        fireDownSprite = fireDown.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -70,6 +74,19 @@ public class Movement : MonoBehaviour
 
         if(prevHorizontalMove != 0){
             animator.SetFloat("PrevInput", prevHorizontalMove);
+        }
+
+
+        if(rb.velocity.y < -15){
+            Debug.Log("Going Down:" + rb.velocity.y);
+            fireDownSprite.color = new Color(fireDownSprite.color.r,fireDownSprite.color.b,fireDownSprite.color.g, -rb.velocity.y - 15);
+        }
+        else if (rb.velocity.y > -10 && rb.velocity.y < 0){
+            fireDownSprite.color = new Color(fireDownSprite.color.r,fireDownSprite.color.b,fireDownSprite.color.g, 0);
+        }
+
+        if(rb.velocity.y == 0){
+            fireDownSprite.color = new Color(fireDownSprite.color.r,fireDownSprite.color.b,fireDownSprite.color.g, 0);
         }
 
     }
